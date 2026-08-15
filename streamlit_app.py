@@ -494,6 +494,11 @@ def chart_macd(df: pd.DataFrame) -> go.Figure:
     fig.add_trace(go.Scatter(x=df.index, y=df["macd_signal"],
                              line=dict(color="#f84d4d", width=1.2, dash="dot"), name="Signal"))
     fig.update_layout(**PLOTLY_LAYOUT, title="MACD — Momentum Indicator")
+    fig.update_layout(
+    **PLOTLY_LAYOUT, 
+    title="RSI 14-Day Momentum Oscillator",
+    yaxis=dict(range=[0, 100])
+)
     return fig
 
 
