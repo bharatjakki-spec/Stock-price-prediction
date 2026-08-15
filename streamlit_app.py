@@ -586,7 +586,7 @@ def chart_feature_importance(fi: pd.Series) -> go.Figure:
     **PLOTLY_LAYOUT, 
     title="Feature Importance Ranking",
     xaxis_title="Importance Score",
-    margin=dict(l=120, r=60, t=36, b=10)
+    margin=dict("l":120, "r":60, "t":36, "b":10)
 )
     return fig
 
