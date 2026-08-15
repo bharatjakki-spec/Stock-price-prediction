@@ -496,9 +496,8 @@ def chart_macd(df: pd.DataFrame) -> go.Figure:
     fig.update_layout(**PLOTLY_LAYOUT, title="MACD — Momentum Indicator")
     fig.update_layout(
     **PLOTLY_LAYOUT, 
-    title="RSI 14-Day Momentum Oscillator",
-    yaxis=dict(range=[0, 100])
-)
+    title="MACD" 
+    )
     return fig
 
 
