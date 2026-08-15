@@ -514,7 +514,7 @@ def chart_rsi(df: pd.DataFrame) -> go.Figure:
     fig.add_trace(go.Scatter(x=df.index, y=df["rsi_14"],
                              line=dict(color="#f5a623", width=1.6), name="RSI 14"))
     fig.update_layout(**PLOTLY_LAYOUT, title="RSI 14-Day Momentum Oscillator",
-                      yaxis_range=[0, 100]))
+                      yaxis_range=[0, 100])
     return fig
 
 
