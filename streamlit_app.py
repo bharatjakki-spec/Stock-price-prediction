@@ -582,9 +582,12 @@ def chart_feature_importance(fi: pd.Series) -> go.Figure:
         text=[f"{v*100:.2f}%" for v in top.values[::-1]],
         textposition="outside", textfont=dict(size=9, color="#8b92a8")
     ))
-    fig.update_layout(**PLOTLY_LAYOUT, title="Feature Importance Ranking",
-                      xaxis_title="Importance Score",
-                      margin=dict(l=120, r=60, t=36, b=10))
+    fig.update_layout(
+    **PLOTLY_LAYOUT, 
+    title="Feature Importance Ranking",
+    xaxis_title="Importance Score",
+    margin=dict(l=120, r=60, t=36, b=10)
+)
     return fig
 
 
