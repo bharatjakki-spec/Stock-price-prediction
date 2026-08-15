@@ -1,0 +1,24 @@
+[client]
+showErrorDetails = true
+maxUploadSize = 200
+pageIconURL = "https://media.githubusercontent.com/media/bharatjakki-spec/Stock-price-prediction/main/📈.png"
+
+[theme]
+base = "dark"
+primaryColor = "#1f77b4"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#161b22"
+textColor = "#e6edf3"
+font = "sans serif"
+
+[server]
+port = 8501
+maxUploadSize = 200
+headless = true
+enableXsrfProtection = true
+
+[logger]
+level = "info"
+
+[client.toolbarMode]
+value = "minimal"

@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+seaborn
+flask
+streamlit
+plotly
+xgboost
+scikit-learn
+yfinance
